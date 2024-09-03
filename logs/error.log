@@ -1,0 +1,35 @@
+2024-09-02 22:20:50,071 - TestLogger - DEBUG - This is a debug message  
+2024-09-02 22:20:50,072 - TestLogger - INFO - This is an info message
+2024-09-02 22:20:50,072 - TestLogger - WARNING - This is a warning message
+2024-09-02 22:20:50,072 - TestLogger - ERROR - This is an error message
+2024-09-02 22:20:50,073 - TestLogger - CRITICAL - This is a critical message
+2024-09-02 23:29:17,854 - ConfigParser - ERROR - Error: No section: 'Paths'
+2024-09-02 23:29:39,036 - ConfigParser - ERROR - Error: No section: 'Paths'
+2024-09-02 23:30:19,928 - ConfigParser - ERROR - Error: No section: 'Paths'
+2024-09-02 23:31:11,902 - ConfigParser - ERROR - Error: No section: 'Paths'
+2024-09-02 23:31:11,903 - CSVReader - ERROR - Failed to read csv file: data.csv. Error: 'ErrorLogger' object has no attribute 'debug'
+2024-09-02 23:31:11,906 - CSVReader - ERROR - Failed to save data to data.db. Error: 'NoneType' object has no attribute 'to_sql'
+2024-09-02 23:31:39,991 - ConfigParser - ERROR - Error: No section: 'Paths'
+2024-09-02 23:31:39,992 - CSVReader - ERROR - Failed to read csv file: data.csv. Error: 'ErrorLogger' object has no attribute 'debug'
+2024-09-02 23:31:39,992 - CSVReader - ERROR - Failed to save data to data.db. Error: 'NoneType' object has no attribute 'to_sql'
+2024-09-02 23:32:17,451 - ConfigParser - ERROR - Error: No section: 'Paths'
+2024-09-02 23:32:17,451 - CSVReader - DEBUG - Reading csv file: data.csv
+2024-09-02 23:32:17,453 - CSVReader - ERROR - File not found: data.csv
+2024-09-02 23:32:17,453 - CSVReader - ERROR - Failed to save data to data.db. Error: 'NoneType' object has no attribute 'to_sql'
+2024-09-02 23:33:22,247 - ConfigParser - ERROR - Error: No section: 'Paths'
+2024-09-02 23:33:22,247 - CSVReader - DEBUG - Reading csv file: data.csv
+2024-09-02 23:33:22,248 - CSVReader - ERROR - File not found: data.csv
+2024-09-02 23:33:22,248 - CSVReader - ERROR - Failed to save data to data.db. Error: 'NoneType' object has no attribute 'to_sql'
+2024-09-02 23:33:22,253 - CSVReader - ERROR - Failed to read data from data/data.db. Error: Execution failed on sql 'SELECT * FROM data': no such table: data
+2024-09-02 23:33:58,232 - ConfigParser - ERROR - Error: No section: 'Paths'
+2024-09-02 23:33:58,232 - CSVReader - DEBUG - Reading csv file: data.csv
+2024-09-02 23:33:58,234 - CSVReader - ERROR - File not found: data.csv
+2024-09-02 23:33:58,234 - CSVReader - ERROR - Failed to save data to data.db. Error: 'NoneType' object has no attribute 'to_sql'
+2024-09-02 23:34:30,338 - ConfigParser - ERROR - Error: No section: 'Paths'
+2024-09-02 23:34:30,338 - CSVReader - DEBUG - Reading csv file: data.csv
+2024-09-02 23:34:30,339 - CSVReader - ERROR - File not found: data.csv
+2024-09-02 23:34:30,341 - CSVReader - ERROR - Failed to save data to data.db. Error: 'NoneType' object has no attribute 'to_sql'
+2024-09-02 23:35:48,596 - ConfigParser - ERROR - Error: No section: 'Paths'
+2024-09-02 23:35:48,597 - CSVReader - DEBUG - Reading csv file: data.csv
+2024-09-02 23:35:48,599 - CSVReader - ERROR - File not found: data.csv
+2024-09-02 23:35:48,599 - CSVReader - ERROR - Failed to save data to data.db. Error: 'NoneType' object has no attribute 'to_sql'
