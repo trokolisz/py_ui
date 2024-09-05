@@ -1,22 +1,26 @@
-import configparser
-from logger import ErrorLogger
+''' parsing config file '''
+import configparser 
 
-error_logger = ErrorLogger(name='ConfigParser')
 
-def get_data_csv_path():
+# Create a ConfigParser object
+config = configparser.ConfigParser()
+
+# Read the INI file
+config.read('config/config.ini')
+
+# Example: Accessing a specific section and key
+def get_config_value(section, key):
     try:
-        config = configparser.ConfigParser()
-        config.read('config.ini')
-        return config.get('Paths', 'data_csv', fallback='data/data.csv')
-    except Exception as e:
-        error_logger.log_error(f'Error: {e}')
-        return 'data/data.csv'
+        return config[section][key]
+    except KeyError:
+        return None
 
-def get_data_db_path():
-    try:
-        config = configparser.ConfigParser()
-        config.read('config.ini')
-        return config.get('Paths', 'data_db')
-    except Exception as e:
-        error_logger.log_error(f'Error: {e}')
-        return 'data/data.db'
+# Example usage:
+if __name__ == "__main__":
+    section_name = 'data_csv'
+    key_name = 'path'
+    value = get_config_value(section_name, key_name)
+    if value:
+        print(f"The value of '{key_name}' in section '{section_name}' is: {value}")
+    else:
+        print(f"'{key_name}' not found in section '{section_name}'")
