@@ -1,14 +1,15 @@
 from pandas import read_csv
 import sqlite3
-from logger import ErrorLogger
-from config_parser import get_data_csv_path, get_data_db_path
+from .logger import ErrorLogger
+from .config_parser import get_config_value
+
 
 # Initialize the ErrorLogger with the name 'CSVReader'
 error_logger = ErrorLogger(name='CSVReader')
 
 # Get the file paths for the CSV and SQLite database from the configuration
-csv_path = get_data_csv_path()
-db_path = get_data_db_path()
+csv_path = get_config_value('data_csv', 'path')
+db_path = get_config_value('data_db', 'path')
 
 
 class CSVReader:

@@ -1,7 +1,7 @@
 import sqlite3
 import pandas as pd
-from config_parser import get_config_value
-from logger import ErrorLogger, changeLogger
+from .config_parser import get_config_value
+from .logger import ErrorLogger, changeLogger
 
 class DBHelper:
     def __init__(self, db_path: str):
